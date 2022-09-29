@@ -1,0 +1,116 @@
+#Projects {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+  }
+  #card {
+    position: relative;
+    display: flex;
+    margin: 4em 0;
+    font-size: 1.15em;
+    background-color: var(--gray);
+    transition: all ease 1s;
+    overflow: hidden;
+    cursor: pointer;
+    // box-shadow: 2px 2px 16px var(--gold);
+
+    .filler {
+      width: 9em;
+      height: 9em;
+      background-color: var(--charcoal);
+      transition: all ease 1s;
+    } // main img filler
+
+    .front,
+    .back {
+      position: absolute;
+      right: 0;
+      width: calc(100% - 10em);
+    }
+    .front {
+      z-index: 10;
+      left: 9em;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      transition: transform ease 1.5s;
+      background-color: var(--gold);
+
+      .badges {
+        display: flex;
+        gap: 1em;
+
+        figure {
+          width: 2.5em;
+          height: 2.5em;
+          background-color: var(--gray);
+        } // filler for project images
+      }
+    }
+
+    .back {
+      padding: 1em;
+
+      p {
+        font-size: 1.25em;
+        margin-bottom: 1em;
+      }
+      a {
+        font-size: 1.25em;
+        margin-right: 1em;
+        color: var(--white);
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      right: 1em;
+      bottom: 1em;
+    }
+  }
+  .slide {
+    .front {
+      transform: translateX(100%);
+    }
+  }
+
+  @media screen and (max-width: 1049px) {
+    #card {
+      font-size: 1em;
+
+      .filler {
+        width: 10em;
+        height: 10em;
+      }
+      .front,
+      .back {
+        width: calc(100% - 11em);
+        height: 80%;
+      }
+      .front {
+        left: 10em;
+      }
+    }
+  }
+  @media screen and (max-width: 769px) {
+    #card {
+      font-size: 0.75em;
+
+      .filler {
+        height: 14em;
+      }
+      .back {
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}

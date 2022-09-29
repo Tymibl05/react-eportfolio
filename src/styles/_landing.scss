@@ -1,0 +1,38 @@
+#Landing {
+  position: relative;
+  min-height: 90vh;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  padding: 2em;
+
+  .greeting {
+    position: relative;
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    font-size: 2.75em;
+    transition: font-size ease 0.5s;
+
+    .text p {
+      margin: 0.3em 0;
+      font-size: 0.85em;
+    }
+
+    .socials {
+      display: flex;
+      gap: 2em;
+      font-size: 0.75em;
+    }
+  }
+
+  @media screen and (max-width: 1049px) {
+    .greeting {
+      font-size: 2em;
+    }
+  }
+  @media screen and (max-width: 769px) {
+  }
+}

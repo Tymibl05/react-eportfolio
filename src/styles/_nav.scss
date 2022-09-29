@@ -1,0 +1,88 @@
+nav {
+  position: relative;
+  min-height: 10vh;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  .menu-icon {
+    display: flex;
+    font-size: 40px;
+    font-weight: 600;
+    transform: rotate(90deg);
+    transition: all ease 1.5s;
+    cursor: pointer;
+
+    .pipe1,
+    .pipe2 {
+      transition: all ease 1.5s;
+    }
+  }
+  .menuOpen {
+    transform: rotate(45deg);
+
+    .pipe1 {
+      transform: rotate(90deg);
+    }
+    .pipe2 {
+      transform: translateX(-12px);
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    button {
+      padding: 0.75rem 1rem;
+      border: 2px solid var(--gold);
+      border-radius: 0.25rem;
+      font-size: 1em;
+      color: var(--white);
+      background: none;
+      transition: background ease 1s;
+
+      &:hover {
+        background-color: var(--gold);
+      }
+    }
+    .theme {
+      height: 1.5rem;
+      width: 3rem;
+      background-color: var(--gray);
+      border-radius: 01rem;
+      border: none;
+      overflow: hidden;
+      cursor: pointer;
+
+      .slider {
+        width: 50%;
+        height: 100%;
+        background-color: black;
+        border-radius: 50%;
+        transform: translateX(100%);
+        transition: all ease 1s;
+      }
+    }
+    .lightTheme {
+      .slider {
+        transform: unset;
+      }
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    padding: 1rem 2rem 1rem 3rem;
+
+    .buttons {
+      button {
+        font-size: 0.75em;
+        padding: 0.5rem 0.75rem;
+      }
+    }
+  }
+}
