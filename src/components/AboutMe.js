@@ -3,34 +3,40 @@ import React from 'react';
 export const AboutMe = () => {
   return (
     <div id="AboutMe">
-      <h1>Who Am I?</h1>
-      <div className="cards">
-        <div className="about-card ">
-          <img className="filler" src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur <span>adipisicing</span>{' '}
-            elit. Dolorum deleniti magnam suscipit illum eligendi nobis magni
-            accusamus quasi, repellat veniam eveniet doloremque dicta,
-            voluptatum sint autem animi praesentium harum soluta.
-          </p>
-        </div>
-        <div className="about-card right">
-          <img className="filler right" src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-            deleniti magnam suscipit illum eligendi nobis magni accusamus quasi,
-            repellat veniam eveniet <span>doloremque</span> dicta, voluptatum
-            sint autem animi praesentium harum soluta.
-          </p>
-        </div>
-        <div className="about-card ">
-          <img className="filler" src="" alt="" />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-            deleniti magnam suscipit illum <span>eligendi</span> nobis magni
-            accusamus quasi, repellat veniam eveniet doloremque dicta,
-            voluptatum sint autem animi praesentium harum soluta.
-          </p>
+      <div>
+        <h1>Who am I?</h1>
+        <div className="info">
+          <div className="summary">
+            <p>
+              I'm Tyler Blease and I'm on an adventure to becoming a full-stack
+              developer. I first began my coding journey at University of
+              Houston where I pursued my B.S. In Computer Science. Since then
+              I've dabbled in computer networking, virtualization, and data
+              analytics.
+            </p>
+            <p>
+              Throughout my journey, I've found that I enjoy creating the
+              webpages and applications that users get to interact with every
+              day. I've begun to focus on Frontend Development to build upon the
+              skills needed to deploy exceptional, responsive digital
+              experiences.
+            </p>
+            <div className="carousel"></div>
+          </div>
+          <div className="skills">
+            <ul>
+              <h2>Relevant Skills</h2>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Firebase</li>
+              <li>Sass</li>
+              <li>Git</li>
+              <li>NPM</li>
+              <li>APIs</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

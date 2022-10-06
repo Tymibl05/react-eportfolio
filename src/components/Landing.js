@@ -14,7 +14,7 @@ export const Landing = () => {
         <div className="text">
           <h2>Hi! I'm</h2>
           <h1>Tyler Blease</h1>
-          <p>Something, Else, Goes, Here</p>
+          <p>Design | Develop | Deploy</p>
         </div>
         <div className="socials">
           <FontAwesomeIcon icon={faGithub} className="bounce" />

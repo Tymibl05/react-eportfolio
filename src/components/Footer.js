@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <div id="Footer">
       <div>Social Links</div>
-      <h2>Tyler B. &copy; 2022</h2>
+      <h3>Designed and Developed by Tyler Blease &copy; 2022</h3>
     </div>
   );
 };

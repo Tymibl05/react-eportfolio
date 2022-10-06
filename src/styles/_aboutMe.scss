@@ -1,94 +1,33 @@
 #AboutMe {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  max-width: 1800px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 2em;
 
-  h1 {
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 4em;
-  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
 
-  .about-card {
-    position: relative;
-    max-width: 60%;
-    font-size: 1.5em;
-    margin: 3em 0;
+    .summary {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2em;
+    }
+    .skills {
+      flex: 1;
+      text-align: center;
 
-    p {
-      padding: 1em;
-      background-color: rgba(75, 74, 74, 0.3);
-
-      span {
-        font-size: 1.25em;
-        font-weight: bold;
-        color: var(--gold);
+      h2 {
+        margin-bottom: 1em;
       }
-    }
-
-    &.right {
-      text-align: end;
-      transform: translateX(calc(100% * 2 / 3));
-    }
-
-    ////////////////////////////////////////////////////
-    .filler {
-      position: absolute;
-      height: 10em;
-      width: 10em;
-      background-color: var(--gray);
-      transform: translateY(calc(-100% * 2 / 3));
-      z-index: -1;
-      opacity: 0.7;
-      transition: transform ease 1s;
-
-      &:hover {
-        background-color: red;
-        transition: all ease 1s;
-      }
-      //? scroll-anim on mobile: opactiy 1 on img/art
-
-      &.right {
-        transform: translateY(calc(-100% * 2 / 3)) translateX(-100%);
-      }
-    }
-  }
-
-  @media screen and (max-width: 1049px) {
-    h1 {
-      margin-bottom: 2em;
-    }
-    .about-card {
-      font-size: 1.25em;
-      .filler {
-        transform: translateY(calc(-100% * 2 / 3));
-      }
-    }
-  }
-  @media screen and (max-width: 769px) {
-    .cards {
-      display: grid;
-
-      .about-card {
-        font-size: 1.15em;
-        max-width: 75%;
-        margin: 1em 0;
-
-        &.right {
-          text-align: end;
-          transform: translateX(33%);
-        }
-
-        .filler {
-          transform: translateX(105%) translateY(5%);
-          transition: transform ease 1s;
-
-          &.right {
-            transform: translateX(-205%) translateY(5%);
-          }
-        }
+      li {
+        margin: 0.5em 0;
       }
     }
   }

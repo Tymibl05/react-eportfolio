@@ -1,48 +1,29 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { projects } from '../data';
-import { CardSlide } from './CardSlide';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLaptop } from '@fortawesome/free-solid-svg-icons';
+import { ProjectCard } from './ProjectCard';
+import { ProjectModal } from './ProjectModal';
 
 export const Projects = () => {
   const projs = projects();
+  const [isProjectModalOpen, setProjectModalOpen] = useState(false);
   return (
     <div id="Projects">
-      <h1>My Work</h1>
-      {projs.map((project) => {
-        return (
-          <CardSlide>
-            <div id="card">
-              <img className={`filler`} src="" alt="" />
-
-              <div className="front">
-                <h2>{project.name}</h2>
-                <div className="badges">
-                  {project.badges.map((badge) => (
-                    <figure></figure>
-                  ))}
-                </div>
-              </div>
-              <div className="back">
-                <p>{project.descriptions.long}</p>
-                <div>
-                  {project.links.github && (
-                    <a href="">
-                      <FontAwesomeIcon icon={faGithub} />
-                    </a>
-                  )}
-                  {project.links.live && (
-                    <a href="">
-                      <FontAwesomeIcon icon={faLaptop} />
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
-          </CardSlide>
-        );
-      })}
+      {isProjectModalOpen && (
+        <ProjectModal setProjectModalOpen={setProjectModalOpen} />
+      )}
+      <div>
+        <h1>Projects</h1>
+        <div className="cards">
+          {projs.map((proj) => (
+            <ProjectCard
+              key={proj.name}
+              proj={proj}
+              isProjectModalOpen={isProjectModalOpen}
+              setProjectModalOpen={setProjectModalOpen}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

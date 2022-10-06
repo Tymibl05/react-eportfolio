@@ -1,0 +1,47 @@
+#ProjectModal {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 98vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    position: relative;
+    font-size: 1.15em;
+    max-width: 60%; // @media mobile -> 70/80%
+    background-color: var(--gray);
+    border-radius: 8px;
+    overflow: hidden;
+
+    .close {
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      background-color: var(--charcoal);
+      padding: 0.5em;
+      border-radius: 1em;
+      cursor: pointer;
+    }
+    .images {
+      img {
+        width: 100%;
+        max-height: 500px;
+      }
+    }
+    .info {
+      padding: 1em;
+      display: grid;
+      gap: 1em;
+      ul,
+      .icons {
+        display: flex;
+        gap: 1em;
+      }
+    }
+  }
+}
