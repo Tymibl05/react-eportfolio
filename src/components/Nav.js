@@ -11,15 +11,7 @@ export const Nav = ({ darkTheme, setDarkTheme }) => {
         <div className="pipe1">|</div>
         <div className="pipe2">|</div>
       </div>
-      <div className="buttons">
-        <button>Contact</button>
-        <div
-          className={`theme ${!darkTheme ? 'lightTheme' : ''}`}
-          onClick={() => setDarkTheme(!darkTheme)}
-        >
-          <div className="slider"></div>
-        </div>
-      </div>
+      <button>Contact</button>
     </nav>
   );
 };

@@ -10,7 +10,7 @@ export const ProjectModal = ({ setProjectModalOpen }) => {
   return (
     <div id="ProjectModal">
       {modalProject && (
-        <div className="container">
+        <div className="card">
           <div className="close" onClick={() => setProjectModalOpen(false)}>
             X
           </div>

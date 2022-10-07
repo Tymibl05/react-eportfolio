@@ -1,40 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import './nav';
-@import './landing';
-@import './aboutMe';
-@import './projects';
-@import './contact';
+@import './homePage';
 @import './footer';
-@import './projectModal';
 
 :root {
   --charcoal: #191919;
   --white: #f5f5f5;
   --gray: #4b4a4a;
   --gold: #f0a500;
+  --gradient1: linear-gradient(
+    180deg,
+    rgba(75, 74, 74, 1) 0%,
+    rgba(25, 25, 25, 1) 30%
+  );
+  --gradient2: radial-gradient(
+    circle,
+    rgba(205, 141, 0, 1) 0%,
+    rgba(214, 104, 0, 0.9360119047619048) 73%,
+    rgba(75, 74, 74, 1) 100%
+  );
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: var(--charcoal);
-  color: var(--white);
+  font-family: 'Alegreya Sans', sans-serif;
 }
-li {
-  list-style: none;
-}
-button {
-  cursor: pointer;
-}
-.bounce {
-  cursor: pointer;
-  transition: transform ease;
-}
-.bounce:hover {
-  transform: scale(1.1);
-}
-.bounce:active {
-  transform: scale(0.9);
+#App {
+  position: relative;
+  padding: 0 1em;
+  background-image: var(--gradient2);
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  li {
+    list-style: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  .bounce {
+    cursor: pointer;
+    transition: transform ease;
+  }
+  .bounce:hover {
+    transform: scale(1.1);
+  }
+  .bounce:active {
+    transform: scale(0.9);
+  }
 }

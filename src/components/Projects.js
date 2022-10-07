@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { projects } from '../data';
 import { ProjectCard } from './ProjectCard';
-import { ProjectModal } from './ProjectModal';
+import { ProjectModal } from '../modals/ProjectModal';
 
 export const Projects = () => {
   const projs = projects();
