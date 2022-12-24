@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   max-width: 300px;
-  border-radius: 4px;
+  // border-radius: 4px;
   box-shadow: 2px 2px 20px 4px var(--charcoal);
   &:hover {
     .info {
@@ -30,7 +30,7 @@
     text-align: center;
     gap: 1em;
     transform: translateY(100%);
-    transition: transform ease 1s;
+    transition: transform ease 0.75s;
 
     ul {
       display: flex;

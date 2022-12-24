@@ -5,7 +5,7 @@ import {
   faInstagram,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
-import profile from '../images/profilePic.jpg';
+import profile from '../images/animated-profile-pic.jpg';
 
 export const Landing = () => {
   return (
@@ -26,7 +26,7 @@ export const Landing = () => {
           </div>
         </div>
         <figure className="profilePic">
-          <img src={profile} alt="profile picture" srcset="" />
+          <img src={profile} alt="" />
         </figure>
       </div>
     </div>

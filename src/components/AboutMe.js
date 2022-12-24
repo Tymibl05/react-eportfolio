@@ -28,6 +28,7 @@ export const AboutMe = () => {
             <li>React.js</li>
             <li>Node.js</li>
             <li>Express</li>
+            <li>MongoDB</li>
             <li>Firebase</li>
             <li>Sass</li>
             <li>Git</li>

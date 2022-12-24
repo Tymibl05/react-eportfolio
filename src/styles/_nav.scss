@@ -35,9 +35,11 @@ nav {
     border: 1px solid var(--gold);
     box-shadow: 2px 2px 8px var(--gold);
     background: transparent;
-    transition: background ease 1s;
+    transition: all ease 0.75s;
     &:hover {
+      color: var(--white);
       background-color: var(--gold);
+      box-shadow: 2px 2px 8px var(--white);
     }
   }
 }
