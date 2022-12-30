@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-eportfolio/static/css/main.b21ad118.css",
+    "main.js": "/react-eportfolio/static/js/main.fc293c15.js",
+    "static/media/animated-profile-pic.jpg": "/react-eportfolio/static/media/animated-profile-pic.eb085e882e6eb105e6ef.jpg",
+    "index.html": "/react-eportfolio/index.html",
+    "main.b21ad118.css.map": "/react-eportfolio/static/css/main.b21ad118.css.map",
+    "main.fc293c15.js.map": "/react-eportfolio/static/js/main.fc293c15.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b21ad118.css",
+    "static/js/main.fc293c15.js"
+  ]
+}
