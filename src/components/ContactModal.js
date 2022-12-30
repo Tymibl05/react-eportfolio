@@ -24,8 +24,8 @@ export const ContactModal = ({ setModal }) => {
       <div id="ContactModal">
         <h1>Send a Message!</h1>
         <form action="" ref={form} onSubmit={submitHandler}>
-          <input type="text" name="name" placeholder="Name" />
-          <input type="email" name="email_from" placeholder="Email" />
+          <input required type="text" name="name" placeholder="Name" />
+          <input required type="email" name="email_from" placeholder="Email" />
           <textarea
             name="message"
             placeholder="Message..."
@@ -36,7 +36,7 @@ export const ContactModal = ({ setModal }) => {
             <button className="cancel" onClick={() => setModal(false)}>
               Cancel
             </button>
-            <button type="submit" className="submit">
+            <button required type="submit" className="submit">
               Send
             </button>
           </div>
