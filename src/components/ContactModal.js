@@ -27,6 +27,7 @@ export const ContactModal = ({ setModal }) => {
           <input required type="text" name="name" placeholder="Name" />
           <input required type="email" name="email_from" placeholder="Email" />
           <textarea
+            required
             name="message"
             placeholder="Message..."
             cols="30"
