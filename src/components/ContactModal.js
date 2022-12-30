@@ -1,44 +1,36 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import '../styles/contactModal.scss';
 
 export const ContactModal = ({ setModal }) => {
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-  const changeHandler = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+  const form = useRef();
   const submitHandler = (e) => {
     e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (res) => alert('Message Sent Successfully!'),
+        (err) => console.log(err.text)
+      );
+    setModal(false);
   };
   return (
     <div className="modal">
       <div id="ContactModal">
         <h1>Send a Message!</h1>
-        <form action="" onSubmit={submitHandler}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            value={form.name}
-            onChange={changeHandler}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={form.email}
-            onChange={changeHandler}
-          />
+        <form action="" ref={form} onSubmit={submitHandler}>
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email_from" placeholder="Email" />
           <textarea
             name="message"
             placeholder="Message..."
             cols="30"
             rows="10"
-            value={form.message}
-            onChange={changeHandler}
           />
           <div className="actions">
             <button className="cancel" onClick={() => setModal(false)}>
