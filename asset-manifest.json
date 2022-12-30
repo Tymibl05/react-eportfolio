@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/eport/static/css/main.b21ad118.css",
-    "main.js": "/eport/static/js/main.c0abb1f2.js",
-    "static/media/animated-profile-pic.jpg": "/eport/static/media/animated-profile-pic.eb085e882e6eb105e6ef.jpg",
-    "static/media/eco1.png": "/eport/static/media/eco1.4a95655a3c7b1ef5dfdc.png",
-    "static/media/tunes1.png": "/eport/static/media/tunes1.128a7c45868bbd739a84.png",
-    "static/media/eco4.png": "/eport/static/media/eco4.751abfe44756189b9099.png",
-    "static/media/amazin1.png": "/eport/static/media/amazin1.a1c8df7e5c6be41995ec.png",
-    "static/media/amazin2.png": "/eport/static/media/amazin2.691197587531eaf8dff6.png",
-    "static/media/admin1.png": "/eport/static/media/admin1.10797cbafff6c3b13b35.png",
-    "static/media/eco2.png": "/eport/static/media/eco2.5c06895f09d97d54b54b.png",
-    "static/media/eco3.png": "/eport/static/media/eco3.7bc9713d93fcd22b39ad.png",
-    "static/media/tunes3.png": "/eport/static/media/tunes3.c347bc10130be5d92a2d.png",
-    "static/media/amazin5.png": "/eport/static/media/amazin5.c132c3472b703a4fb527.png",
-    "static/media/amazin4.png": "/eport/static/media/amazin4.27f3c8ae1be88d24765d.png",
-    "static/media/tunes2.png": "/eport/static/media/tunes2.2b8b6ee48ea6670b1b4e.png",
-    "static/media/amazin3.png": "/eport/static/media/amazin3.f7a5bb3c449822235229.png",
-    "static/media/todo1.png": "/eport/static/media/todo1.6ac27090532729e2218b.png",
-    "static/media/todo3.png": "/eport/static/media/todo3.d1461356003108fb67e8.png",
-    "static/media/todo2.png": "/eport/static/media/todo2.f25a136a9d106cabfcf0.png",
-    "index.html": "/eport/index.html",
-    "main.b21ad118.css.map": "/eport/static/css/main.b21ad118.css.map",
-    "main.c0abb1f2.js.map": "/eport/static/js/main.c0abb1f2.js.map"
+    "main.css": "/react-eportfolio/static/css/main.b21ad118.css",
+    "main.js": "/react-eportfolio/static/js/main.99b05055.js",
+    "static/media/animated-profile-pic.jpg": "/react-eportfolio/static/media/animated-profile-pic.eb085e882e6eb105e6ef.jpg",
+    "static/media/eco1.png": "/react-eportfolio/static/media/eco1.4a95655a3c7b1ef5dfdc.png",
+    "static/media/tunes1.png": "/react-eportfolio/static/media/tunes1.128a7c45868bbd739a84.png",
+    "static/media/eco4.png": "/react-eportfolio/static/media/eco4.751abfe44756189b9099.png",
+    "static/media/amazin1.png": "/react-eportfolio/static/media/amazin1.a1c8df7e5c6be41995ec.png",
+    "static/media/amazin2.png": "/react-eportfolio/static/media/amazin2.691197587531eaf8dff6.png",
+    "static/media/admin1.png": "/react-eportfolio/static/media/admin1.10797cbafff6c3b13b35.png",
+    "static/media/eco2.png": "/react-eportfolio/static/media/eco2.5c06895f09d97d54b54b.png",
+    "static/media/eco3.png": "/react-eportfolio/static/media/eco3.7bc9713d93fcd22b39ad.png",
+    "static/media/tunes3.png": "/react-eportfolio/static/media/tunes3.c347bc10130be5d92a2d.png",
+    "static/media/amazin5.png": "/react-eportfolio/static/media/amazin5.c132c3472b703a4fb527.png",
+    "static/media/amazin4.png": "/react-eportfolio/static/media/amazin4.27f3c8ae1be88d24765d.png",
+    "static/media/tunes2.png": "/react-eportfolio/static/media/tunes2.2b8b6ee48ea6670b1b4e.png",
+    "static/media/amazin3.png": "/react-eportfolio/static/media/amazin3.f7a5bb3c449822235229.png",
+    "static/media/todo1.png": "/react-eportfolio/static/media/todo1.6ac27090532729e2218b.png",
+    "static/media/todo3.png": "/react-eportfolio/static/media/todo3.d1461356003108fb67e8.png",
+    "static/media/todo2.png": "/react-eportfolio/static/media/todo2.f25a136a9d106cabfcf0.png",
+    "index.html": "/react-eportfolio/index.html",
+    "main.b21ad118.css.map": "/react-eportfolio/static/css/main.b21ad118.css.map",
+    "main.99b05055.js.map": "/react-eportfolio/static/js/main.99b05055.js.map"
   },
   "entrypoints": [
     "static/css/main.b21ad118.css",
-    "static/js/main.c0abb1f2.js"
+    "static/js/main.99b05055.js"
   ]
 }
