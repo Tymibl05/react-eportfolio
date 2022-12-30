@@ -2,13 +2,7 @@ export const projects = () => {
   return [
     {
       name: 'AmazIn',
-      images: [
-        '/images/AmazIn/desktop1.png',
-        '/images/AmazIn/desktop2.png',
-        '/images/AmazIn/desktop3.png',
-        '/images/AmazIn/desktop4.png',
-        '/images/AmazIn/desktop5.png',
-      ],
+      image_root: 'amazin',
       skills: [
         'Html',
         'CSS',
@@ -29,11 +23,7 @@ export const projects = () => {
     },
     {
       name: 'Tunes',
-      images: [
-        '/images/Music Player/desktop1.png',
-        '/images/Music Player/mobile1.png',
-        '/images/Music Player/mobile2.png',
-      ],
+      image_root: 'tunes',
       skills: ['Html', 'CSS', 'JS', 'React.js', 'Sass'],
       descriptions: {
         short: 'Music Player Application',
@@ -46,11 +36,7 @@ export const projects = () => {
     },
     {
       name: 'To-Dos',
-      images: [
-        '/images/Todo List/mobile1.png',
-        '/images/Todo List/mobile2.png',
-        '/images/Todo List/mobile3.png',
-      ],
+      image_root: 'todo',
       skills: ['Html', 'CSS', 'JS', 'React.js', 'Sass'],
       descriptions: {
         short: 'CRUD Todo List App',
@@ -63,12 +49,7 @@ export const projects = () => {
     },
     {
       name: 'Eco-Bright',
-      images: [
-        '/images/Eco-Bright/desktop1.png',
-        '/images/Eco-Bright/desktop2.png',
-        '/images/Eco-Bright/desktop3.png',
-        '/images/Eco-Bright/desktop4.png',
-      ],
+      image_root: 'eco',
       skills: ['Html', 'CSS', 'JS'],
       descriptions: {
         short: 'Static Cleaning Company Webpage',
@@ -81,7 +62,7 @@ export const projects = () => {
     },
     {
       name: 'Admin Dashboard',
-      images: ['/images/Admin Dashboard/desktop-full.png'],
+      image_root: 'admin',
       skills: ['Html', 'CSS'],
       descriptions: {
         short: 'Static Administrator Dashboard ',
