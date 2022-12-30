@@ -5,8 +5,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1em;
-
+  padding: 0 1em;
+  h2 {
+    color: var(--orange1);
+  }
   .menu-icon {
     display: flex;
     font-size: 30px;
@@ -31,15 +33,17 @@ nav {
   button {
     padding: 0.5em;
     font-size: 1em;
-    color: var(--gold);
-    border: 1px solid var(--gold);
-    box-shadow: 2px 2px 8px var(--gold);
+    color: var(--blue1);
+    border: 1px solid var(--blue1);
+    box-shadow: 2px 2px 8px var(--blue1);
     background: transparent;
-    transition: all ease 0.75s;
+    transition: all ease 0.5s;
+    cursor: pointer;
     &:hover {
       color: var(--white);
-      background-color: var(--gold);
-      box-shadow: 2px 2px 8px var(--white);
+      background-color: var(--orange1);
+      box-shadow: 2px 2px 8px var(--orange1);
+      border-color: var(--orange2);
     }
   }
 }

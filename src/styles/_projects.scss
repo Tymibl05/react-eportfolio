@@ -1,15 +1,102 @@
-@import './projectCard';
-@import './projectModal';
-
 #Projects {
+  display: flex;
+  justify-content: center;
   h1 {
-    margin: 1em 0;
     text-align: center;
+    margin: 1em 0;
   }
-  .cards {
+  img {
+    display: block;
+  }
+  .names {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 2em;
+    gap: 1em;
+    margin-bottom: 2em;
+    button {
+      padding: 1em;
+      color: var(--orange1);
+      background-color: transparent;
+      border: 2px solid var(--orange1);
+      border-radius: 10px 0 10px 0;
+      font-size: 16px;
+      &.active,
+      &.active:hover {
+        background-color: var(--orange1);
+        color: var(--white);
+      }
+      &:hover {
+        background-color: var(--blue1);
+        color: var(--white);
+        border-color: var(--blue2);
+      }
+    }
+  }
+  .project {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: center;
+    gap: 1em;
+    .images {
+      figure {
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 100%;
+          width: 100%;
+          border: 2px solid var(--orange1);
+        }
+      }
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: fit-content;
+      gap: 2em;
+      padding: 2em;
+      border: 2px solid var(--orange1);
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        h3 {
+          color: var(--blue1);
+        }
+      }
+      p {
+        font-size: 20px;
+        color: var(--white);
+      }
+      figure {
+        min-width: 60%;
+        height: 400px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+    button {
+      padding: 0.5em;
+      background-color: transparent;
+      color: var(--blue1);
+      border: 2px solid var(--blue1);
+      transition: all ease 0.25s;
+      &:hover {
+        color: var(--white);
+        background-color: var(--blue1);
+      }
+    }
   }
 }

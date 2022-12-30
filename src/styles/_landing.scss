@@ -16,11 +16,18 @@
         display: grid;
         gap: 0.5em;
         margin-bottom: 0.5em;
+        h4 {
+          color: var(--orange1);
+          text-shadow: 2px 2px 16px var(--orange1);
+        }
       }
       .socials {
         display: flex;
         justify-content: center;
         gap: 1em;
+        a {
+          color: var(--blue1);
+        }
       }
     }
     .profilePic {
@@ -30,7 +37,7 @@
       max-height: 300px;
       border-radius: 50%;
       overflow: hidden;
-      box-shadow: 2px 2px 50px 12px var(--charcoal);
+      box-shadow: 2px 2px 24px var(--gray1);
       img {
         width: 100%;
       }

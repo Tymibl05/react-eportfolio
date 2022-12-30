@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Contact = () => {
+export const Contact = ({ setModal }) => {
   return (
     <div id="Contact">
       <div className="container">
@@ -9,7 +9,7 @@ export const Contact = () => {
           Feel free to reach out with any oportunities or even just for a quick
           chat!
         </p>
-        <button>Let's Chat!</button>
+        <button onClick={() => setModal(true)}>Let's Connect!</button>
       </div>
     </div>
   );

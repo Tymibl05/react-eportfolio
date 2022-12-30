@@ -7,6 +7,9 @@
   .socials {
     display: flex;
     gap: 1em;
-    font-size: 1.25em;
+    a {
+      font-size: 1.25em;
+      color: var(--orange1);
+    }
   }
 }

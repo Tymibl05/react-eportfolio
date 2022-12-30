@@ -14,19 +14,24 @@
       display: flex;
       flex-direction: column;
       gap: 1em;
-      background-color: #dddddd;
-      padding: 2em 1em;
-      box-shadow: 2px 2px 30px 8px var(--charcoal);
+      color: var(--gray4);
+      background-color: var(--white);
+      padding: 2em;
+      box-shadow: 2px 2px 18px 8px var(--gray1);
+      line-height: 24px;
     }
     .skills {
       h2 {
         text-align: center;
+        margin-bottom: 1em;
       }
       ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 3em;
+        max-width: 70%;
+        margin: 0 auto;
       }
     }
   }

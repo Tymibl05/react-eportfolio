@@ -20,9 +20,27 @@ export const Landing = () => {
             <p className="typewriter-anim">Design | Develop | Deploy</p>
           </div>
           <div className="socials">
-            <FontAwesomeIcon icon={faGithub} className="bounce" />
-            <FontAwesomeIcon icon={faInstagram} className="bounce" />
-            <FontAwesomeIcon icon={faLinkedin} className="bounce" />
+            <a
+              href="https://github.com/Tymibl05"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} className="bounce" />
+            </a>
+            <a
+              href="https://www.instagram.com/tblease05/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faInstagram} className="bounce" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tyler-blease/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} className="bounce" />
+            </a>
           </div>
         </div>
         <figure className="profilePic">

@@ -14,9 +14,11 @@ export const AboutMe = () => {
           </p>
           <p>
             Throughout my journey, I've found that I enjoy creating the webpages
-            and applications that users get to interact with every day. I've
-            begun to focus on Frontend Development to build upon the skills
-            needed to deploy exceptional, responsive digital experiences.
+            and applications that users get to interact with every day. Aside
+            from designing and developing my skills, I've begun to focus on
+            implementing backend server and database solutions to build upon the
+            skills needed to deploy exceptional and responsive digital
+            experiences.
           </p>
         </div>
         <div className="skills">
@@ -27,7 +29,7 @@ export const AboutMe = () => {
             <li>JavaScript</li>
             <li>React.js</li>
             <li>Node.js</li>
-            <li>Express</li>
+            <li>Express.js</li>
             <li>MongoDB</li>
             <li>Firebase</li>
             <li>Sass</li>

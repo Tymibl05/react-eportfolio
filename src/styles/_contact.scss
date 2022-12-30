@@ -13,15 +13,14 @@
     button {
       font-size: 1em;
       padding: 0.5rem 0.75rem;
-      background: none;
-      color: var(--white);
-      border: 1px solid var(--gold);
-      box-shadow: 2px 2px 8px var(--gold);
-      transition: all ease 0.75s;
+      background: transparent;
+      color: var(--orange1);
+      border: 1px solid var(--orange1);
+      box-shadow: 2px 2px 8px var(--orange1);
+      transition: all ease 0.5s;
       &:hover {
         color: var(--white);
-        background-color: var(--gold);
-        box-shadow: 2px 2px 8px var(--white);
+        background-color: var(--orange1);
       }
     }
   }

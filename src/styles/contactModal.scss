@@ -1,0 +1,38 @@
+#ContactModal {
+  h1 {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    input,
+    textarea {
+      padding: 1em;
+      color: var(--white);
+      background-color: var(--gray2);
+      outline: none;
+      resize: none;
+    }
+    .actions {
+      align-self: flex-end;
+    }
+    button {
+      padding: 1em;
+      margin-left: 1em;
+      &.cancel {
+        color: var(--red1);
+        background-color: var(--red2);
+        border: none;
+        border-radius: 4px;
+      }
+      &.submit {
+        color: var(--green1);
+        background-color: var(--green2);
+        border: none;
+        border-radius: 4px;
+      }
+    }
+  }
+}

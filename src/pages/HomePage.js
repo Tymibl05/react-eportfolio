@@ -4,14 +4,14 @@ import { Contact } from '../components/Contact';
 import { Landing } from '../components/Landing';
 import { Projects } from '../components/Projects';
 
-export const HomePage = () => {
+export const HomePage = ({ setModal }) => {
   return (
     <div id="HomePage">
       <div>
         <Landing />
         <AboutMe />
         <Projects />
-        <Contact />
+        <Contact setModal={setModal} />
       </div>
     </div>
   );
